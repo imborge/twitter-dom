@@ -1,0 +1,30 @@
+{
+  "name": "@imborge/twitter-dom",
+  "version": "0.1.0",
+  "description": "A content script utility for browser extension developers",
+  "files": ["dist"],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:cjs && npm run build:esm && npm run build:types",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:types": "tsc -p tsconfig.types.json",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "chrome",
+    "firefox",
+    "twitter",
+    "contentscript",
+    "browser-extensions",
+    "extension"
+  ],
+  "author": "imborge",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
