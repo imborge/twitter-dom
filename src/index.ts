@@ -19,10 +19,17 @@ export class StatusObserver {
   private readonly observer;
 
   /**
+   * Callback for StatusObserver
+   *
+   * @callback statusObserverCallback
+   * @param {HTMLElement} statusNode - The node containing the tweet status.
+   * @param {string|undefined} statusID - The ID of the tweet/status, if available.
+   * @param {string|undefined} username - The username of the creator of the tweet/status.
+   */
+
+  /**
    * 
-   * @param callback The function that will be called when new tweet statuses are added to the DOM.
-   * 
-   * `callback: (statusNode: HTMLElement, statusID: string | undefined, username: string | undefined) => void`
+   * @param {statusObserverCallback} callback - The function that will be called when new tweet statuses are added to the DOM.
    */
   constructor(callback: (statusNode: HTMLElement, statusID: string | undefined, username: string | undefined) => void) {
     this.statusCallback = callback;
