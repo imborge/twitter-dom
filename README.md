@@ -8,7 +8,7 @@ function that gets called when new tweet statuses are added to the DOM.
 
 `StatusObserver` has only 2 methods:
 
-`observe()` and `disconnect` which starts and stops listening to the DOM respectively.
+`observe()` and `disconnect()` which starts and stops listening to the DOM respectively.
 
 ## Installation (via NPM)
 
