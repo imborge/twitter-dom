@@ -22,7 +22,15 @@
     "browser-extensions",
     "extension"
   ],
-  "author": "imborge",
+  "author": "imborge <npm@imborge.com>",
+  "homepage": "https://github.com/imborge/twitter-dom",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:imborge/twitter-dom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imborge/twitter-dom/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.9.4"
